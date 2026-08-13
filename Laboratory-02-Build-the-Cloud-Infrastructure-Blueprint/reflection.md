@@ -8,4 +8,4 @@ Clear documentation is important before building infrastructure because it helps
 
 This lab helped me gain new skills in running Linux commands, checking system information, writing Markdown files, and learning about cloud providers. It also helped me explain technical ideas more simply.
 
-Completing this mission improved my GitHub portfolio with organized files and clear examples of my work. It demonstrates my growing knowledge of cloud computing, which will help me in future projects and my career. Thank you, Ma'am!
+Completing this mission improved my GitHub portfolio with organized files and clear examples of my work. It demonstrates my growing knowledge of cloud computing, which will help me in future projects and my career.
