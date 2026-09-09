@@ -1,7 +1,7 @@
 # PRELIM ACTIVITY 1
 
 ## Name
-Santos, Dean Mark S.
+Caballa, John Rick M.
 
 ## Course & Section
 BSIT 4F
