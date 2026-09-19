@@ -1,25 +1,9 @@
 # Mission 4 Reflection
 
-## Technical Takeaways
+This version improves flow, removes repetitive phrasing, and uses concise, professional technical language.
 
-Executing Laboratory 04 gave me valuable hands-on experience with core Docker commands and containerization concepts. Here are the main technical skills and concepts I developed throughout the exercise:
+Laboratory 04 provided valuable hands-on experience with Docker and containerization concepts. Through practical execution in the KillerCoda Ubuntu environment, I experienced firsthand how containers offer a lightweight, fast-starting alternative to traditional Virtual Machines by sharing the host OS kernel instead of requiring a full guest operating system.
 
-* **Containerization vs. Virtualization:** I saw firsthand how containers run much faster and require fewer resources than standard Virtual Machines. Since containers share the host machine's kernel rather than spinning up a full guest OS for every application, the setup and boot processes are significantly streamlined.
-* **Rapid Deployment Workflow:** Working in the KillerCoda Ubuntu terminal, I used `docker --version` and `docker info` to verify the environment. I then ran `docker pull nginx` to fetch the Nginx image and `docker run` to deploy it. It was impressive to see a full web server running live in just a couple of commands—much faster than traditional manual installation on a VM.
-* **Port Mapping & Network Exposure:** I gained a clear understanding of why port mapping is essential for containerized applications. Using the `-p 8080:80` flag routed traffic from host port 8080 to container port 80. I verified the connection by executing `curl http://localhost:8080`, which returned the default Nginx welcome page output.
-* **Container Lifecycle Management:** I practiced managing the state of a container using a full command sequence:
-  * `docker ps` to view active containers.
-  * `docker stop nginx-server` to halt execution.
-  * `docker rm nginx-server` to remove the instance.
-  * `docker ps -a` to verify total removal.
-  
-  This reinforced the concept of ephemerality—understanding that container filesystems are temporary and that data stored inside them doesn't persist once the container is deleted.
+Beginning with environment validation via docker --version and docker info, I pulled and deployed an Nginx container using docker pull nginx and docker run. This demonstrated how efficiently a service can be provisioned compared to manual OS installations. Working with port mapping (-p 8080:80) highlighted how traffic routes from host port 8080 to internal container port 80, which I verified by executing curl http://localhost:8080 to retrieve the default Nginx welcome page.
 
----
-
-## DevOps Culture & Portfolio Building
-
-* **DevOps Synergy:** This activity highlighted how containerization bridges the gap between development and IT operations. Because a container package contains the application along with all its exact dependencies, it guarantees environment consistency across different stages of deployment, eliminating "works on my machine" issues.
-* **GitHub Organization:** Beyond CLI commands, I improved my cloud portfolio by creating a dedicated `Laboratory 04` directory, writing clear Markdown documentation, and storing evidence screenshots systematically in a dedicated folder.
-
-Overall, this lab allowed me to connect theoretical cloud concepts with practical execution, building my skills in Docker CLI operations, Nginx deployment, container networking, and structured documentation.
+Managing the container lifecycle using docker ps, docker stop, and docker rm reinforced essential container management commands and underscored the ephemeral nature of container storage. Beyond technical execution, the lab illustrated how containerization bridges development and IT operations by providing consistent, reproducible runtime environments. Finally, documenting the workflow—structuring the GitHub repository, drafting Markdown logs, and organizing image assets—strengthened my technical documentation and version control skills.
