@@ -8,14 +8,12 @@ Virtual Machines (VMs) and Containers represent two distinct approaches to appli
 
 ## Comparison Table
 
-| Architectural Feature | Virtual Machines (VMs) | Containers |
-| :--- | :--- | :--- |
-| **Virtualization Level** | Hardware-level (Hypervisor) | Operating System-level (Kernel sharing) |
-| **Operating System** | Requires a dedicated Guest OS per instance | Shares the Host OS kernel |
-| **Boot Performance** | Minutes (Full OS boot cycle) | Seconds / Milliseconds (Process initiation) |
-| **Resource Utilization** | High overhead (RAM, storage, CPU dedicated to Guest OS) | Minimal overhead (Lightweight process execution) |
-| **Isolation Boundary** | Hardware-isolated (Hypervisor abstraction) | Process-isolated (Namespaces & Cgroups) |
-| **Portability & Footprint** | Gigabytes (Large image binaries) | Megabytes (Minimal image layers) |
+| Feature | Virtual Machines | Containers |
+| --- | --- | --- |
+| **Structure** | Has its own full system (Guest OS) running on virtual hardware. | Shares the main computer's system (Host OS) kernel. |
+| **Start Time** | Slow (takes a few minutes to turn on). | Fast (starts in just a few seconds). |
+| **System Use** | Heavy. Uses a lot of RAM and computer power. | Light. Uses less RAM and CPU space. |
+| **Separation** | Strong (separated at the hardware level). | Good (separated at the process level). |
 
 ---
 
