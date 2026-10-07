@@ -2,7 +2,7 @@
 
 ## Mission Overview
 
-This laboratory focused on deploying a multi-tier private cloud storage application using Docker Compose. The application consisted of a Nextcloud web application and a MariaDB database. Docker Compose was used to define and deploy both services as a single application stack.
+In this lab, I deployed a private cloud storage app using Docker Compose. The app uses two parts working together: a Nextcloud web app and a MariaDB database. I used Docker Compose to set up, run, and manage both services together as one project.
 
 ## Objectives
 
@@ -27,7 +27,7 @@ docker-compose down
 
 ## Skills Learned
 
-Through this mission, I learned how to create a Docker Compose configuration and use it to deploy multiple containers together. I also learned how a Nextcloud application communicates with a MariaDB database through Docker Compose networking and environment variables. The activity improved my understanding of multi-tier architecture and Infrastructure as Code.
+In this lab, I learned how to write a Docker Compose file to run multiple containers at the same time. I learned how Nextcloud talks to the MariaDB database using Docker networking and environment variables. This activity helped me better understand multi-tier apps and Infrastructure as Code.
 
 ## Screenshots
 
